@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd663b29.css",
+    "main.css": "/static/css/main.44e976e8.css",
     "main.js": "/static/js/main.e56affdd.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.8fa40b51.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.12052f81.chunk.js",
@@ -18,7 +18,7 @@
     "static/media/astro.png": "/static/media/astro.5afea4b29371ef3e5814.png",
     "static/media/PokemonGb-RAeo.ttf": "/static/media/PokemonGb-RAeo.6211ee48ea626f34681e.ttf",
     "index.html": "/index.html",
-    "main.dd663b29.css.map": "/static/css/main.dd663b29.css.map",
+    "main.44e976e8.css.map": "/static/css/main.44e976e8.css.map",
     "main.e56affdd.js.map": "/static/js/main.e56affdd.js.map",
     "reactPlayerYouTube.8fa40b51.chunk.js.map": "/static/js/reactPlayerYouTube.8fa40b51.chunk.js.map",
     "reactPlayerSoundCloud.12052f81.chunk.js.map": "/static/js/reactPlayerSoundCloud.12052f81.chunk.js.map",
@@ -35,7 +35,7 @@
     "reactPlayerPreview.44276508.chunk.js.map": "/static/js/reactPlayerPreview.44276508.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd663b29.css",
+    "static/css/main.44e976e8.css",
     "static/js/main.e56affdd.js"
   ]
 }
