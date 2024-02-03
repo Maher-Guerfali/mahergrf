@@ -1,0 +1,43 @@
+@import "../../global.scss";
+
+.Bio
+{
+    display: flex;
+    height: 95vh;
+    width: 100vw;
+    z-index: 54;
+    flex-direction: row;
+    background-color: rgba(244, 234, 224, 0.857);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 23px 30px;
+    justify-content: center;
+    padding: 5px 59px 59px 59px;
+    align-items: center;
+    //padding-bottom: 20px;
+    
+}
+.leftp{
+   display: flex;
+   height: 160px;
+   width: 780px;
+   flex-direction: column;
+   align-items: flex-start;
+   letter-spacing: 5px;
+   initial-letter-align: 2px;
+   justify-content: space-around;
+   @include mobile{
+     
+    height: 60vh;
+   width: 75vw;
+    
+  }
+   
+}
+.rightp{
+    width: 500px;
+    height: 600px;
+    @include mobile{
+     
+        display: none;
+        
+      }
+}

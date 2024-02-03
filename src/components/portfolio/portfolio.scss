@@ -1,0 +1,226 @@
+@import "../../global.scss";
+
+.portfolio {
+  background-color: rgba(244, 234, 224, 0.857);
+  //background-color: rgb(8, 209, 95);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+  //z-index: 20;
+  //justify-content: space-around;
+  //background-color: aqua;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 23px 30px;
+  padding-top: 60px;
+
+  h1 {
+    font-size: 50px;
+
+    @include mobile{
+      font-size: 20px;
+    }
+  }
+
+  .invs{
+    display: none;
+  }
+  .closeButton{
+    position: absolute;
+    //border: 6px 6px black solide;
+    cursor: url("https://i.ibb.co/RNcFYfz/dzs.png"), auto;
+    //height: 110px;
+    //width:115px;
+    //background-color: aqua;
+    font-size: 44px;
+    left: 95%;
+    top: 20px;
+    z-index: 36;
+    //left: 90%;
+    //bottom: 100%;
+    @include mobile{
+      left: 82%;
+      font-size: 33px;
+    }
+  }
+.devs{
+  //flex: 0.8;
+  z-index: 33;
+ 
+  //flex: 0.8;
+  //background-color: rgb(140, 207, 207);
+}
+.techs{
+  //background-color: rgb(47, 255, 0);
+  
+  
+ //flex: 0.2;
+}
+  .define{
+    width: 85vw;
+    //padding-bottom: 66px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    z-index: 29;
+    background-color: rgba(244, 234, 224, 0.916);
+    height: 70vh;
+    border: 10px solid $yel;
+    padding: 33px;
+    position: absolute;
+    top: 15%;
+    box-shadow: 9px 9px 19px;
+    @include mobile{
+      flex-direction: column;
+      height: 60vh;
+      padding: 16px;
+    }
+  }
+
+
+
+
+  
+
+  ul {
+    margin: 10px;
+     // height:20%;
+      //width: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    cursor: url("https://i.ibb.co/RNcFYfz/dzs.png"), auto;
+  
+   
+    @include mobile{
+      margin: 10px 0;
+      height: 50px;
+     flex-wrap:wrap;
+      justify-content: center;
+    }
+  }
+  .topbassr{
+    //background-color: aqua;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    //background-color: brown;
+    @include mobile{
+      //padding-top: 0px;
+    }
+  }
+  .miniimage{
+    height: 600px;
+    width: 600px;
+    @include mobile{
+      //padding-top: 0px;
+      height: 200px;
+      width: 200px;
+    }
+  }
+  .titlepo{
+    //top:8%;
+    color: rgb(196, 47, 34);
+    //background-color: aqua;
+    font-size: 53px;
+   
+    //position: absolute;
+    //left: 43%;
+    //padding-bottom: 20px;
+    @include mobile{
+      font-size: 6vw;
+      //left: 41%;
+    }
+
+
+  }
+
+  .container-works {
+   //width: 444px;
+   //background-color: aqua;
+   //position: absolute;
+   z-index: 23;
+   height: 50vh;
+   //background-color: aqua;
+   //background-color: aqua;
+   //flex: 0.5;
+   //height: 450px;
+   //background-color: rgb(121, 248, 102);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    //padding-top: 90%;
+
+    @include mobile{
+      //width: 70%;
+     // height:70%;
+     // justify-content: ;
+      //flex-wrap: nowrap;
+    }
+.items-images{
+  width: 100%;
+  height: 100%;
+  @include mobile{
+    //width: 70%;
+   
+    //flex-wrap: nowrap;
+  }
+}
+    .items-works {
+    width: 250px;
+    //background-color: rgb(191, 0, 255);
+      height: 150px;
+      cursor: url("https://i.ibb.co/RNcFYfz/dzs.png"), auto;
+      //border-radius: 20px;
+      //border: 1px solid rgb(61, 61, 61);
+      margin: 9px 12px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      color: rgb(26, 26, 26);
+      position: relative;
+      transition: all .5s ease;
+     
+
+      @include mobile{
+        width: 100px;
+        //background-color: springgreen;
+        height: 100px;
+        //justify-content: space-between;
+        
+    
+      }
+
+      h3 {
+        position: absolute;
+        font-size: 11px;
+        padding-left: 10px;
+        font-weight: 400;
+        z-index: 2;
+        
+      }
+
+      img {
+        //width: 350px;
+        //height: 300px;
+        width: 80%;
+        object-fit:contain;
+        z-index: 1;
+        @include mobile{
+          //width: 100px;
+          width: 90%;
+      
+        }
+      }
+
+      &:hover {
+        background-color: $mainColor;
+        img {
+          opacity: 0.2;
+          z-index: 0;
+        }
+      }
+    }
+  }
+}

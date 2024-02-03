@@ -1,0 +1,128 @@
+@import "../../global.scss";
+
+.buttom{
+  //position: absolute;
+  top:50%;
+  font-size:18px;
+  padding-top: 2%;
+  opacity: 0.5;
+  @include mobile {
+    font-size:13px;
+    padding-top: 1%;
+  }
+}
+.contact {
+  background-color: rgba(244, 234, 224, 0.857);
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    @include mobile {
+     
+      margin-bottom: 70px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    form {
+      width: 95%;
+      height: 70%;
+      display: flex;
+      //background-color: aqua;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      input {
+        //width: 85vw;
+        //height: 20vh;
+        color: black;
+        border: none;
+        background-color: rgba(227, 209, 193, 0.857);
+        font-size: 30px;
+      
+        @include mobile {
+          //width: 80vw;
+        //height: 20vh;
+        font-size: 20px;
+        }
+      }
+      input::placeholder {
+        //color: red;
+       padding-left: 3%;
+      }
+     
+      .inputcontact{
+        width: 85vw;
+        height: 20vh;
+        color: black;
+       
+        font-size: 20px;
+      }
+      .inputmail{
+        width: 85vw;
+        height: 10vh;
+        font-size: 20px;
+        
+      }
+      .sendbutton{
+        width: 40vw;
+        
+        height: 10vh;
+      }
+.textarea{
+  width: 70vw;
+  height: 20vh;
+  
+}
+      textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 14px;
+
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
+      }
+
+      button {
+        width: 150px;
+        height: 30px;
+        color: white;
+        background-color: rgb(48, 22, 27);
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        color: green;
+      }
+    }
+  }
+}

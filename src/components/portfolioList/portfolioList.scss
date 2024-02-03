@@ -1,0 +1,36 @@
+@import "../../global.scss";
+
+.portfolioList {
+  font-size: 1.4w;
+  height: 70%;
+  //background-color: blueviolet;
+  //width: 40%;
+  //z-index: 24;
+  //background-color: rgb(199, 252, 74);
+  //margin-right: 50px;
+  //background-color: brown;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: url("https://i.ibb.co/RNcFYfz/dzs.png"), auto;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  
+
+  @include mobile{
+    //margin-right: 20px;
+    //height: 100%;
+  }
+
+  &.active {
+    background-color: $mainColor;
+    color: white;
+  }
+
+}
+.dar
+{
+  height: 30%;
+  width: 30%;
+}

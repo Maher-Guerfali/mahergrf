@@ -1,0 +1,110 @@
+@import "../../global.scss";
+
+.Apps
+{
+    display: flex;
+    height: 95vh;
+    width: 100vw;
+    z-index: 54;
+    flex-direction: column;
+    background-color: rgba(244, 234, 224, 0.857);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 23px 30px;
+    justify-content: center;
+    padding-top: 25px;
+    align-items: center;
+    //padding-bottom: 20px;
+    
+}
+.parti1
+{
+    position: absolute;
+}
+
+.loginb
+{
+    font-size: large;
+    margin-left: 20px;
+}
+.playb
+{
+    height: 30%;
+    width: 30%;
+    background-image:url("../../../public/assets/x.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 70px;
+    font-size: 50px;
+    color: rgb(172, 172, 172);
+    padding: 15px 15px 15px 15px;
+    @include mobile{
+        margin-top: 10px;
+      }
+}
+.play2
+{
+   height: 73px;
+   width: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+   
+}
+.hdeux{
+    margin-bottom: 15px;
+   //position: relative;
+   //left: 4%;
+    //color: rgb(131, 86, 71);
+    font-size: 3rem;
+    @include mobile{
+        //font-size: 18px;
+        font-size: 1.3rem;
+        width: 70%;
+        //background-color: aqua;
+      }
+}
+.unitygame{
+    width:70vw;
+    height:60vh;
+    border: 15px solid rgba(32, 115, 174, 0.866);
+    background:green;
+    @include mobile{
+        height: 63vh;
+        width: 80vw;
+      }
+}
+.wallpaper{
+    height: 60vh;
+    
+    width: 70vw;
+    
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(13, 13, 13);
+    border: 15px solid rgba(202, 177, 141, 0.866);
+    justify-content: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-image:url("../../../public/assets/pokemon.gif");
+    @include mobile{
+        height: 63vh;
+        width: 80vw;
+      }
+}
+.Gamelogo{
+    height: 16vh;
+    width: 8vw;
+    
+    @include mobile{
+        height: 10vh;
+    width: 24vw;
+      }
+}
+.etaps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

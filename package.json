@@ -2,30 +2,90 @@
   "name": "maher",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://www.mahergrf.com",
+  "homepage": "https://mahergrf.com",
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@material-ui/core": "^5.0.0-beta.5",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.6",
+    "@mui/styled-engine-sc": "^5.3.0",
+    "@react-three/drei": "^9.88.13",
+    "@react-three/fiber": "^8.15.10",
+    "@react-three/xr": "^3.4.0",
+    "@reduxjs/toolkit": "^1.7.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.4.0",
     "@types/node": "^16.11.19",
-    "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
+    "@types/three": "^0.136.1",
+    "console-browserify": "^1.2.0",
+    "emailjs": "^4.0.1",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.17.3",
+    "framer-motion": "^6.2.3",
+    "gh-pages": "^3.2.3",
+    "ityped": "^1.0.3",
+    "lodash-es": "^4.17.21",
     "react": "^17.0.2",
+    "react-colorful": "^5.5.1",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.1",
+    "react-horizontal-scrolling-menu": "^2.7.0",
+    "react-indiana-drag-scroll": "^2.1.0",
+    "react-pdf": "^7.1.3",
+    "react-player": "^2.9.0",
+    "react-redux": "^7.2.6",
     "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.6",
+    "react-scroll-parallax": "^3.0.4",
+    "react-spring": "^9.4.2",
+    "react-three-fiber": "^6.0.13",
+    "react-typewriter-effect": "^1.1.0",
+    "react-unity-webgl": "^8.8.0",
+    "react-use-gesture": "^9.1.3",
+    "react-with-gesture": "^4.0.8",
+    "sass": "^1.63.6",
+    "save-dev": "^0.0.1-security",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
+    "styled-components": "^5.3.3",
+    "sweetalert2": "^11.6.15",
+    "swiper": "^11.0.3",
+    "three": "^0.158.0",
     "typescript": "^4.5.4",
+    "typewriter-effect": "^2.18.2",
+    "valtio": "^1.2.11",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -39,5 +99,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/addons": "^6.4.9",
+    "@storybook/builder-webpack5": "^6.4.9",
+    "@storybook/manager-webpack5": "^6.4.9",
+    "@storybook/node-logger": "^6.4.9",
+    "@storybook/preset-create-react-app": "^4.0.0",
+    "@storybook/react": "^6.4.9",
+    "@storybook/theming": "^6.4.9",
+    "@types/ityped": "^1.0.1",
+    "@types/react": "^17.0.38",
+    "@types/react-scroll": "^1.8.3",
+    "tailwindcss": "^3.2.4",
+    "webpack": "^5.65.0"
   }
 }
