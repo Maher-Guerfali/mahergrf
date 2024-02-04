@@ -8,7 +8,7 @@ import Contact from "./components/contact/Contact"
 import "./app.scss"
 import Menu from "./components/menu/Menu";
 
-import {Button} from './stories/Button'
+//import {Button} from './stories/Button'
 import Models from './components/models/Models'
 import Visa from './components/images/Visa'
 import Apps from './components/Apps/Apps'

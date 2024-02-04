@@ -3,8 +3,8 @@ import { init } from "ityped";
 import { useEffect } from "react";
 import Model from './Model'; /* highlight-line */
 import  { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+//import { Canvas } from '@react-three/fiber';
+//import { OrbitControls } from '@react-three/drei';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -23,7 +23,7 @@ import { useState } from 'react';
 import {Link} from 'react-scroll';
 import Typewriter from 'typewriter-effect';
 import React, { useRef } from 'react';
-import { useGLTF } from '@react-three/drei';
+//import { useGLTF } from '@react-three/drei';
 //import Box from '@mui/material/Box';  
 
 export default function Intro() {
@@ -208,23 +208,7 @@ Links
   //<img className="icon" src="assets/man.png" alt="" width="250px" height="500px"  />
 }
   
-<Canvas
-         camera={{ position: [2, 0, 12.25], fov: 15 }}
-         style={{
-            backgroundColor: '#111a21',
-            width: '100vw',
-            height: '100vh',
-         }}
-      >
-         <ambientLight intensity={1.25} />
-         <ambientLight intensity={0.1} />
-         <directionalLight intensity={0.4} />
-         <Suspense fallback={null}>
-         <Model position={[0.025, -0.9, 0]} /> /* highlight-line */
-         </Suspense>
-         <OrbitControls />
-      </Canvas>
- 
+
          
          
       </div>

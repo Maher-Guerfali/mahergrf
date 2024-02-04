@@ -12,11 +12,6 @@ import PrintIcon from '@mui/icons-material/Print';
 import ShareIcon from '@mui/icons-material/Share';
 import WebIcon from '@mui/icons-material/Web';
 import AndroidIcon from '@mui/icons-material/Android';
-import { Suspense, useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { ContactShadows, Environment, useGLTF, OrbitControls } from "@react-three/drei";
-import { HexColorPicker } from "react-colorful";
-import { proxy, useSnapshot } from "valtio";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';

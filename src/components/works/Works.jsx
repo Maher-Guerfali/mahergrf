@@ -37,7 +37,7 @@ export default function Works() {
   const [DescVideo4, setDescVideo4] = useState(null);
 
 
-  /*useEffect(() => {
+  useEffect(() => {
     fetch('/api/videos/text.json')
       .then(response => {
         if (!response.ok) {
@@ -72,7 +72,7 @@ export default function Works() {
         setDescVideo4(data.DescVideo4);
       });
   }, []);
-*/
+
   const data = [
   
     
@@ -118,16 +118,16 @@ export default function Works() {
       id: "5",
       field: "ItemUnity",
       icon: "./assets/soccer.png",
-      title: "Sandbox Land",
+      title: "Sandbox Lands",
       Technologies:
-        "A Sandbox voxel art game that offers multiple role-playing options, including being a gamer, skateboarder, and footballer. Players can compete to win unique NFTs.",
+        "Welcome to my creative corner in the virtual universe! As a verified voxel artist within the Sandbox Metaverse, I specialize in crafting immersive experiences using VoxEdit and Sandbox Game Maker. With a passion for innovative gameplay, I've designed multiple maps that showcase the dynamic potential of voxel art. Explore my portfolio to witness the fusion of artistic expression and interactive game design in this exciting digital realm",
         video:
         "https://youtu.be/WefnChKZhFs",
     },
     {
       id: "6",
       field: "ItemUnity",
-      icon: "./assets/gataa.png",
+      icon: "./assets/Viewer.png",
       title: "VR ProViewer",
       Technologies:
         " VR App to Sream internal storage videos, in a big curved screen with video controllers",
@@ -161,7 +161,7 @@ export default function Works() {
     <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]} 
-      effect={'coverflow'}
+      effect={'EffectFade'}
         grabCursor={true}
         centeredSlides={true}
         loop={true}
