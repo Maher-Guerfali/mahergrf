@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rgb-shift {
+  0% { 
+    background-color: rgba(59, 130, 246, 0.15);
+    transform: scale(1);
+  }
+  33% { 
+    background-color: rgba(239, 68, 68, 0.15);
+    transform: scale(1.1);
+  }
+  66% { 
+    background-color: rgba(249, 115, 22, 0.15);
+    transform: scale(1);
+  }
+  100% { 
+    background-color: rgba(59, 130, 246, 0.15);
+    transform: scale(1);
+  }
+}
+
+@keyframes theme-transition-blue-to-white {
+  0% { background-color: #111827; }
+  100% { background-color: #f8fafc; }
+}
+
+@keyframes theme-transition-white-to-black {
+  0% { background-color: #f8fafc; }
+  100% { background-color: #000000; }
+}
+
+.animate-theme-to-white {
+  animation: theme-transition-blue-to-white 0.8s ease-in-out forwards;
+}
+
+.animate-theme-to-black {
+  animation: theme-transition-white-to-black 0.8s ease-in-out forwards;
+}
+
+.animate-rgb-shift {
+  animation: rgb-shift 3s infinite;
+  filter: blur(80px);
+  box-shadow: 0 0 120px currentColor;
+  width: 300%;
+  height: 450%;
+}
+
+.triangle-button {
+  clip-path: polygon(0% 0%, 0% 100%, 100% 50%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.theme-transition {
+  transition: all 0.8s ease-in-out;
+}
+
+.theme-default {
+  --bg-primary: #111827;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --accent-primary: #3b82f6;
+}
+
+.theme-light {
+  --bg-primary: #f8fafc;
+  --text-primary: #111827;
+  --text-secondary: #1e293b;
+  --accent-primary: #2563eb;
+  --description-bg: #f1f5f9;
+}
+
+.theme-dark {
+  --bg-primary: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --accent-primary: #ef4444;
+}
+
+/* PS2 Controller Button Styles */
+.ps-button {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  padding: 2px;
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.5),
+    -2px -2px 6px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ps-button:active {
+  transform: scale(1.09);
+}
+
+.button-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.triangle {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 0.75rem solid transparent;
+  border-right: 0.75rem solid transparent;
+  border-bottom: 1.3rem solid #22c55e;
+  background: transparent;
+  transform: translateY(-2px);
+}
+
+.triangle::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -0.65rem;
+  width: 0;
+  height: 0;
+  border-left: 0.65rem solid transparent;
+  border-right: 0.65rem solid transparent;
+  border-bottom: 1.1rem solid black;
+}
+
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #ef4444;
+}
+
+.square {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: 2px solid #f97316;
+}
+
+.x-symbol {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 100;
+  line-height: 1;
+  color: #3b82f6;
+}
