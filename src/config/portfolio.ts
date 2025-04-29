@@ -422,11 +422,11 @@ export const portfolioConfig = {
   experiences: [
     {
       "id": 1,
-      "title": "Senior XR Developer",
+      "title": "Software Engineer",
       "company": "Brilliant",
       "website": "https://brilliant.net.sa",
       "period": "October 2024 - Present",
-      "description": "Building advanced XR applications with AI integration for a government-focused real-time video editing platform.",
+      "description": "Building advanced XR Web applications with AI integration for a government-focused real-time video editing platform.",
       "icon": "https://i.ibb.co/d4Q97WFp/logo-white.png",
       "details": [
         "Collaborated with in-house AI researchers to integrate custom models into a Unity-based WebXR application",
@@ -440,7 +440,7 @@ export const portfolioConfig = {
     
     {
       "id": 2,
-      "title": "Lead Game & Software Engineer",
+      "title": "Game Engineer",
       "company": "Majin Studios (Pingoos, France)",
       "website": "https://www.pingoos.gg",
       "period": "June 2023 - July 2024",
