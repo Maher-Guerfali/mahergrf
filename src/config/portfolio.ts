@@ -37,7 +37,7 @@ export const portfolioConfig = {
       name: "Unity VR Development",
       issuer: "Unity Technologies",
       date: "2023",
-      icon: "https://i.ibb.co/CZMDLCn/1db73b5a320b0e0cac3fe6759d2d07c99ae020ac-600x600.jpg"
+      icon: "https://media.licdn.com/dms/image/v2/C4E0BAQFdNatYGiBelg/company-logo_100_100/company-logo_100_100/0/1636138754252/facebook_logo?e=1749686400&v=beta&t=sF3N3sMSddCxesFFrQwpri4UCr3kxCsF_jubDKrRTMY"
     },
     {
       name: "Using AR Foundation in Unity",
